@@ -603,7 +603,7 @@ makeRapPlot <- function(rapDataFrame){
   
   P <- ggplot(rapDataFrame, aes(Sample, CountsInPeaks))+
     geom_boxplot(fill="lightblue")+
-    theme(axis.title.y=element_text(angle=0))+
+    theme(axis.title.y=element_text(angle=0),axis.title.x=element_text(angle=90))+
     xlab("")
   return(P)
 }
